@@ -151,6 +151,11 @@ aside input {
 }
 
 /************* Chat Preview section *************/
+#scrollable-container {
+    overflow-y: scroll;
+    height: 75vh;
+}
+
 .chat-preview {
     height: 9vh;
     border-top: 1px solid gray;
