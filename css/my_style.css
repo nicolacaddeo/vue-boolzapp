@@ -114,9 +114,10 @@ main {
     margin: 10px auto;
     padding: 10px 0;
     display: flex;
+    align-items: center;
 }
 
-.section-container p {
+#enable-button {
     color: #4f7485;
     text-decoration: underline;
     cursor: pointer;
@@ -148,6 +149,31 @@ aside input {
     width: 95%;
     border: 1px solid lightgray;
 }
+
+/************* Chat Preview section *************/
+.chat-preview {
+    height: 9vh;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.contact-preview {
+    margin-left: 1rem;
+}
+
+.contact-preview h4 {
+    padding-bottom: 5px;
+}
+
+.message-time {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    font-size: 0.8rem;
+}
+
+/************* //Chat Preview section *************/
 
 /**** //ASIDE ****/
 
