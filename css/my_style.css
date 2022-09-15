@@ -105,6 +105,33 @@ main {
 #enable-notification {
     height: 8vh;
     background-color: #8edafc;
+    display: flex;
+}
+
+.section-container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px 0;
+    display: flex;
+}
+
+.section-container p {
+    color: #4f7485;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bi-bell-slash-fill {
+    font-size: 1.8rem;
+    border-radius: 50%;
+    padding: 10px;
+    color: #8edafc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.notification-actions {
+    margin-left: 10px;
 }
 
 #search-chat {
