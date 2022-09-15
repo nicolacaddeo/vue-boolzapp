@@ -1,5 +1,8 @@
 :root {
     --header-height: 15vh;
+    --app-header-height: 7vh;
+    --element-color: #d9dbd5;
+    --icon-color: #b1b1b1;
 }
 
 /********************
@@ -46,7 +49,7 @@ body {
 
 /************* /Blocks macro structure *************/
 
-/************* APP Container*************/
+/************* APP Container - macro blocks *************/
 
 .app-container {
     display: flex;
@@ -55,12 +58,44 @@ body {
 aside {
     width: 30%;
     height: 90vh;
-    border: 1px dashed black;
+    border-right: 1px solid gray;
+    background-color: #fff;
 }
-
 
 main {
     flex-grow: 1;
-    border: 1px dashed red;
     height: 90vh;
 }
+
+/************* //APP Container - macro blocks *************/
+
+/**** ASIDE ****/
+#account-navigator {
+    height: var(--app-header-height);
+    background-color: var(--element-color);
+}
+
+#enable-notification {
+    height: 8vh;
+    background-color: #8edafc;
+}
+
+#search-chat {
+    height: 5vh;
+    background-color: var(--element-color);
+    padding: 10px;
+    text-align: center;
+}
+
+aside input {
+    padding: 0.6vh;
+    margin: 0 auto;
+    width: 95%;
+    border: 1px solid lightgray;
+}
+
+/**** //ASIDE ****/
+
+/********************
+    //STYLE
+*********************/
