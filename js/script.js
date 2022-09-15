@@ -168,6 +168,12 @@ const app = new Vue({
     el: '#root',
     data: {
         contacts
+    },
+    methods: {
+        getContactPic: function (array, i) {
+            console.log(`img/avatar${array[i].avatar}.jpg`)
+            return `img/avatar${array[i].avatar}.jpg`
+        }
     }
 });
 

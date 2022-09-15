@@ -51,12 +51,12 @@
                             <div class="section-container">
                                 <div>
                                     <!-- Contact's Profile Picture -->
-                                    <img class="profile-pic" src="img/avatar_2.jpg" alt="">
+                                    <img class="profile-pic" :src="getContactPic(contacts, i)" alt="">
                                 </div>
                                 <div class="contact-preview">
                                     <!-- Contact's Name and Last Message -->
-                                    <h4>Michele</h4>
-                                    <p class="last-message">Ultimo messaggio</p>
+                                    <h4>{{ contacts[i].name }}</h4>
+                                    <p class="last-message">{{ contacts[i].messages[1].message }}</p>
                                 </div>
                                 <div class="message-time">12:00</div>
                             </div>

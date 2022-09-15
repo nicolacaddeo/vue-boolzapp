@@ -46,7 +46,7 @@ img {
 #root {
     height: 90vh;
     width: 80vw;
-    border: 2px solid black;
+    /*border: 2px solid black; */
     position: absolute;
     top: 5%;
     left: 10%;
