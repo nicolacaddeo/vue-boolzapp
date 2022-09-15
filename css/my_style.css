@@ -19,6 +19,10 @@ body {
     position: relative;
 }
 
+img {
+    width: 100%;
+}
+
 /********************
     //GENERALS RULES
 *********************/
@@ -73,6 +77,29 @@ main {
 #account-navigator {
     height: var(--app-header-height);
     background-color: var(--element-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#account-navigator span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#account-navigator i {
+    color: var(--icon-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 5px;
+    cursor: pointer;
 }
 
 #enable-notification {
