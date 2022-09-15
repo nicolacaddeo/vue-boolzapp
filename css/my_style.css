@@ -1,3 +1,7 @@
+:root {
+    --header-height: 15vh;
+}
+
 /********************
     GENERALS RULES
 *********************/
@@ -9,8 +13,54 @@
 
 body {
     line-height: 1.2rem;
+    position: relative;
 }
 
 /********************
     //GENERALS RULES
 *********************/
+
+/********************
+    STYLE
+*********************/
+
+/************* Blocks macro structure *************/
+.green {
+    height: var(--header-height);
+    background-color: #009688;
+}
+
+.white {
+    height: calc(100vh - var(--header-height));
+    background-color: #d9dbd5;
+}
+
+#root {
+    height: 90vh;
+    width: 80vw;
+    border: 2px solid black;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+/************* /Blocks macro structure *************/
+
+/************* APP Container*************/
+
+.app-container {
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    height: 90vh;
+    border: 1px dashed black;
+}
+
+
+main {
+    flex-grow: 1;
+    border: 1px dashed red;
+    height: 90vh;
+}
