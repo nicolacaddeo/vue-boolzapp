@@ -4,7 +4,13 @@ const app = new Vue({
     el: '#root',
     data: {
         contacts,
-        activeIndex: 0
+        activeIndex: 0,
+        messageToSend: '',
+        newMessage: {
+            date: '10/01/2020 15:30:55',
+            message: '',
+            status: 'sent'
+        }
     },
     methods: {
         getContactPic: function (array, i) {
@@ -12,6 +18,11 @@ const app = new Vue({
         },
         selectChat: function (index) {
             this.activeIndex = index
+        },
+        sendMessage: function () {
+            this.newMessage.message = this.messageToSend
+            this.contacts[this.activeIndex].messages.push(this.newMessage)
+            this.messageToSend = ''
         }
     }
 });
