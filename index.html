@@ -89,6 +89,15 @@
                 </div>
                 <div class="main-chat">
                     <!-- MESSAGES SECTION -->
+                    <div class="messages-container">
+                        <div v-for="text in contacts[activeIndex].messages"
+                            :class="text.status == 'sent' ? 'sent-container' : 'received-container'">
+                            <div class="message" :class="text.status == 'sent' ? 'sent' : 'received'">
+                                {{ text.message }}
+                                <p class="hour">12.00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="chat-actions">
                     <!-- Input for typing message, Mic and Emoji -->
@@ -97,6 +106,7 @@
                     <div><i class="bi bi-mic-fill"></i></div>
                 </div>
             </main>
+
         </div>
     </div>
 

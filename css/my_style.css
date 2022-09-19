@@ -228,6 +228,52 @@ aside input {
     font-size: 1.8rem;
 }
 
+/**** Message Containers ****/
+.messages-container {
+    width: 100%;
+    height: 95%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.message {
+    padding: 10px 40px 10px 15px;
+    margin-bottom: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sent-container {
+    display: flex;
+    justify-content: end;
+}
+
+.received-container {
+    display: flex;
+}
+
+.received {
+    background-color: #fff;
+}
+
+.sent {
+    background-color: #d5f9ba;
+}
+
+.hour {
+    font-size: 0.6rem;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+}
+
+
+/**** //Message Container ****/
+
 /**** //MAIN ****/
 
 /********************
