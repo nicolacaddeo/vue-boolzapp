@@ -3,11 +3,15 @@ console.log('JS OK!');
 const app = new Vue({
     el: '#root',
     data: {
-        contacts
+        contacts,
+        activeIndex: 0
     },
     methods: {
         getContactPic: function (array, i) {
             return `img/avatar${array[i].avatar}.jpg`
+        },
+        selectChat: function (index) {
+            this.activeIndex = index
         }
     }
 });

@@ -178,9 +178,15 @@ aside input {
     font-size: 0.8rem;
 }
 
+.chat-preview.activeChat {
+    background-color: #e9ebeb;
+}
+
 /************* //Chat Preview section *************/
 
 /**** //ASIDE ****/
+
+
 
 /********************
     //STYLE

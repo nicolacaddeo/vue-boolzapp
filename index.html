@@ -50,7 +50,8 @@
                     </div>
                     <div id="chats-container">
                         <!-- CHAT PREVIEW BLOCK -->
-                        <div v-for="(contact, i) in contacts" class="chat-preview">
+                        <div v-for="(contact, i) in contacts" @click="selectChat(i)"
+                            :class="{activeChat: activeIndex == i}" class="chat-preview">
                             <div class="section-container">
                                 <div>
                                     <!-- Contact's Profile Picture -->
@@ -70,6 +71,7 @@
             </aside>
             <main>
                 <!-- Sezione chat aperte -->
+                <div class="chat-header"></div>
             </main>
         </div>
     </div>
