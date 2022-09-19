@@ -2,7 +2,7 @@
     --header-height: 15vh;
     --app-header-height: 7vh;
     --element-color: #d9dbd5;
-    --icon-color: #b1b1b1;
+    --icon-color: #737373;
 }
 
 /********************
@@ -95,7 +95,9 @@ main {
     font-weight: bold;
 }
 
-#account-navigator i {
+#account-navigator i,
+.chat-header i,
+.chat-actions i {
     color: var(--icon-color);
     font-size: 1.5rem;
     font-weight: bold;
@@ -186,7 +188,47 @@ aside input {
 
 /**** //ASIDE ****/
 
+/**** MAIN ****/
+.chat-header {
+    height: var(--app-header-height);
+    background-color: var(--element-color);
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.main-chat {
+    height: 76vh;
+    background-image: url('../img/mine.jpg');
+    overflow-y: scroll;
+}
+
+.chat-actions {
+    height: var(--app-header-height);
+    background-color: var(--element-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#last-seen {
+    font-size: 0.9rem;
+}
+
+.chat-actions input {
+    width: 85%;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.chat-actions i {
+    font-size: 1.8rem;
+}
+
+/**** //MAIN ****/
 
 /********************
     //STYLE

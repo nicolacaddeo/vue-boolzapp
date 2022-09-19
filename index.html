@@ -71,7 +71,31 @@
             </aside>
             <main>
                 <!-- Sezione chat aperte -->
-                <div class="chat-header"></div>
+                <div class="chat-header">
+                    <!-- Active contact's info  -->
+                    <div style="display: flex;">
+                        <img class="profile-pic" :src="getContactPic(contacts, activeIndex)" alt="">
+                        <div class="contact-preview">
+                            <h4>{{ contacts[activeIndex].name }}</h4>
+                            <p id="last-seen">Ultimo accesso oggi alle 12.00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-paperclip"></i>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+
+                </div>
+                <div class="main-chat">
+                    <!-- MESSAGES SECTION -->
+                </div>
+                <div class="chat-actions">
+                    <!-- Input for typing message, Mic and Emoji -->
+                    <div><i class="bi bi-emoji-smile"></i></div>
+                    <input type="text" placeholder=" Scrivi un messaggio">
+                    <div><i class="bi bi-mic-fill"></i></div>
+                </div>
             </main>
         </div>
     </div>
@@ -79,5 +103,8 @@
     <div class="green"></div>
     <div class="white"></div>
 </body>
+<!-- 
+    
+ -->
 
 </html>
