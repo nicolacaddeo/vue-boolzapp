@@ -223,8 +223,9 @@ aside input {
 .chat-actions input {
     width: 85%;
     height: 5vh;
-    border-radius: 10px;
+    padding: .5rem;
     border: 1px solid gray;
+    border-radius: 10px;
 }
 
 .chat-actions i {
