@@ -10,6 +10,11 @@ const app = new Vue({
             date: '10/01/2020 15:30:55',
             message: '',
             status: 'sent'
+        },
+        contactAnswer: {
+            date: '10/01/2020 15:30:55',
+            message: 'Ok!',
+            status: 'received'
         }
     },
     methods: {
@@ -23,9 +28,13 @@ const app = new Vue({
             this.newMessage.message = this.messageToSend
             this.contacts[this.activeIndex].messages.push(this.newMessage)
             this.messageToSend = ''
+            setTimeout(() => {
+                this.contacts[this.activeIndex].messages.push(this.contactAnswer)
+            }, 1000)
         }
     }
 });
+
 
 
 
