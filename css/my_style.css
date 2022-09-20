@@ -1,6 +1,8 @@
 :root {
     --header-height: 15vh;
     --app-header-height: 7vh;
+    --enable-notification-height: 8vh;
+    --search-bar-height: 5vh;
     --element-color: #d9dbd5;
     --icon-color: #737373;
 }
@@ -15,7 +17,6 @@
 }
 
 body {
-    line-height: 1.2rem;
     font-family: 'Segoe UI', sans-serif;
     position: relative;
 }
@@ -106,15 +107,15 @@ main {
 }
 
 #enable-notification {
-    height: 8vh;
+    height: var(--enable-notification-height);
     background-color: #8edafc;
     display: flex;
 }
 
 .section-container {
     width: 95%;
-    margin: 10px auto;
-    padding: 10px 0;
+    margin: .5rem auto;
+    padding: .5rem 0;
     display: flex;
     align-items: center;
 }
@@ -139,7 +140,7 @@ main {
 }
 
 #search-chat {
-    height: 5vh;
+    height: var(--search-bar-height);
     background-color: var(--element-color);
     padding: 10px;
     text-align: center;
@@ -155,7 +156,7 @@ aside input {
 /************* Chat Preview section *************/
 #scrollable-container {
     overflow-y: scroll;
-    height: 75vh;
+    height: calc(90vh - var(--app-header-height) - var(--enable-notification-height) - var(--search-bar-height));
 }
 
 .chat-preview {
@@ -163,6 +164,8 @@ aside input {
     border-top: 1px solid gray;
     border-bottom: 1px solid lightgray;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .contact-preview {
@@ -170,7 +173,7 @@ aside input {
 }
 
 .contact-preview h4 {
-    padding-bottom: 5px;
+    padding-bottom: .1rem;
 }
 
 .message-time {
